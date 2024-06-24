@@ -6,10 +6,13 @@ import { Routes,Route } from "react-router";
 
 const Home = () => {
     return (<>
-        <Header/>
+    <div className=" overflow-x-hidden">
+    <Header/>
         <Routes>
             <Route path="/" element={<DashBoard/>} />
         </Routes>
+    </div>
+        
     </>);
 }
 
