@@ -1,9 +1,11 @@
 
 import React from "react";
+import { useNavigate } from "react-router";
 
 const ProductCard = (props) => {
+    const navigate = useNavigate()
     return (
-        <div className="pro-card-box m-2 flex justify-center flex-col ">
+        <div className="pro-card-box m-2 flex justify-center flex-col cursor-pointer " role="button" onClick={()=>navigate(`/product/${props.id}`)}>
             <div className="pro-list p-4 text-center leading-8  m-4  w-60 shadow-2xl rounded-2xl ">
                 <h1 className="pro-head text-stone-800 font-serif font-bold ... text-md ">{props.name}</h1>
                 <img className="pro-image rounded-2xl p-2 flex relative left-1.5 " height={150} width={180} src={props.image} alt={props.name} />

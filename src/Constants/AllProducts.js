@@ -23,7 +23,7 @@ const AllProducts = [
     , {
         id: 3,
         name: " GAMING-WIRED ",
-        price: '3200 ',
+        price: '3200',
         image: "https://d3lnc7yu1ksdj.cloudfront.net/wp-content/uploads/2023/10/PLYR_TMNT_S6PPY-R793_Hero_v001.jpg",
         stock:10,
         Discount:13.26,

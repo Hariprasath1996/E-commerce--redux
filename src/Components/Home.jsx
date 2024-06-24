@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./Header";
 import DashBoard from "./DashBoard";
+import ProductContainer from "./ProductContainer";
 import { Routes,Route } from "react-router";
 
 
@@ -10,6 +11,7 @@ const Home = () => {
     <Header/>
         <Routes>
             <Route path="/" element={<DashBoard/>} />
+            <Route path="/product/:id" element={<ProductContainer/>} />
         </Routes>
     </div>
         
